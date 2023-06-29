@@ -7,6 +7,9 @@ const LoginForm = ({onSubmit}) => {
   
 	const handleSubmit = (e) => {
 	  e.preventDefault();
+	  if(username.trim()===''||password.trim()===''){ 
+		alert("Please enter user name & password")
+		return;
 	  onSubmit(username, password);
 	  setUsername("");
 	  setPassword("");
