@@ -7,18 +7,7 @@ namespace DeveloperSample.Algorithms
     {
         public static int GetFactorial(int n)
         {
-            /*
-            if (n < 2)
-                return 1;
-            int fact = n;
-            while (n > 0)
-            {
-                fact *= n - 1;
-                n--;
-                if (n == 1)
-                    break;
-            }
-            return fact;*/
+
             //using recursive method
             if (n == 0)
                 return 1;
